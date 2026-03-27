@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "soxy",
+  "version": "${version}",
+  "name": "soxy",
+  "description": "A minecraft mod that can generate voxy cache in server side",
+  "authors": ["wellcoming"],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/soxy/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "ng.welcomi.soxy.Soxy"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "voxy": "<=${voxy_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
