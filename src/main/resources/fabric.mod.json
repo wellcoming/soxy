@@ -19,5 +19,8 @@
     "voxy": "<=${voxy_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
-  }
+  },
+  "provides":[
+    "sodium"
+  ]
 }
