@@ -55,7 +55,12 @@ dependencies {
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modImplementation("com.github.wellcoming:voxy:${project.voxy_version}")
+    modImplementation("com.github.wellcoming:voxy:${project.voxy_version}") {
+        exclude module: "sodium"
+    }
+
+    include project(":sodium-dummy")
+    runtimeOnly project(":sodium-dummy")
 }
 
 processResources {

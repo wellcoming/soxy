@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+version = "0.8.7"
+group = "dummy.sodium"
+
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "sodium",
+  "version": "${version}",
+  "name": "Sodium (Dummy)",
+  "description": "Dummy Sodium to satisfy Voxy dependencies on the server.",
+  "environment": "server",
+  "contact": {},
+  "authors": ["Dummy"]
+}

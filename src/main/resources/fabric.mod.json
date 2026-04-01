@@ -16,11 +16,8 @@
   },
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "voxy": "<=${voxy_version}",
+    "voxy": "*",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
-  },
-  "provides":[
-    "sodium"
-  ]
+  }
 }
