@@ -58,6 +58,15 @@ dependencies {
     modImplementation("com.github.wellcoming:voxy:${project.voxy_version}") {
         exclude module: "sodium"
     }
+    
+    ["lwjgl", "lwjgl-zstd", "lwjgl-lmdb"].each { module ->
+        implementation("org.lwjgl:${module}:${project.lwjgl_version}")
+        include("org.lwjgl:${module}:${project.lwjgl_version}")
+        ["natives-windows", "natives-linux", "natives-macos"].each { os ->
+            implementation("org.lwjgl:${module}:${project.lwjgl_version}:${os}")
+            include("org.lwjgl:${module}:${project.lwjgl_version}:${os}")
+        }
+    }
 
     include project(":sodium-dummy")
     runtimeOnly project(":sodium-dummy")

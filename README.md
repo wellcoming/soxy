@@ -11,6 +11,5 @@ It runs on a dedicated server and generates Voxy cache data directly from the se
 /soxy generate [dimension_id]
 ```
 
-## License
-
-GPL-3.0
+> [!WARNING]
+> ARM servers are unsupported due to missing LWJGL native libraries; you must build the mod yourself if needed.
